@@ -1,19 +1,14 @@
-import { getRandomColorCombination } from "./utils/randomColor";
-
-const jsonStr = [
-  {
-    label: "产业链图谱",
-    value: "http://47.99.195.25:8007/industryInvest/allView",
-    icon: "icon1.png",
-    bg: "block-bg1.png",
-    mask: "mask1.png",
-  },
-];
+import { useState } from "react";
+import { getColorCombination, PubsubService } from "./utils";
 
 function App() {
-  const { backgroundColor, fontColor } = getRandomColorCombination();
-  console.log(`Background color: ${backgroundColor}`);
-  console.log(`Font color: ${fontColor}`);
+  const { backgroundColor, fontColor } = getColorCombination();
+  const [inputText, setInputText] = useState("1");
+  PubsubService.clearSubsByTopic("clickEvent");
+  PubsubService.subscribe("clickEvent", (params: any) => {
+    console.log(params);
+    setInputText(params.number + 1);
+  });
   return (
     <>
       <div
@@ -26,6 +21,14 @@ function App() {
       >
         按F12查看控制台
       </div>
+      <button
+        onClick={(e) => {
+          PubsubService.publish("clickEvent", { number: inputText });
+        }}
+      >
+        点击
+      </button>
+      <input value={inputText} />
     </>
   );
 }

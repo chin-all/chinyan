@@ -1,7 +1,7 @@
 type ECacheType = "sessionStorage" | "localStorage";
 const storageType = ["sessionstorage", "localstorage"];
 /**
- * 设置缓存的方法，可将数据存储在浏览器的 sessionStorage 或 localStorage 中
+ * @description 设置缓存的方法，可将数据存储在浏览器的 sessionStorage 或 localStorage 中
  * 共有 get、set 、remove 和 clear 四个方法用于操作缓存
  * @param type      设置的缓存类型
  * @param key       要存储或获取的键名

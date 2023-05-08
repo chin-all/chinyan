@@ -1,8 +1,8 @@
 /**
- * 获取一组颜色组的方法，可通过这个方法随机生成背景和字体的颜色
+ * @description 获取一组颜色组的方法，可通过这个方法随机生成背景和字体的颜色
  * @return backgroundColor 背景颜色 fontColor 字体颜色
  */
-export function getRandomColorCombination(): {
+export function getColorCombination(): {
   backgroundColor: string;
   fontColor: string;
 } {
