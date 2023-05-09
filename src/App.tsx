@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getColorCombination, PubsubService } from "./utils";
+import { getColorCombination, PubsubService, GetUrlParameter } from "./utils";
 
 function App() {
   const { backgroundColor, fontColor } = getColorCombination();
@@ -9,6 +9,7 @@ function App() {
     console.log(params);
     setInputText(params.number + 1);
   });
+  console.log(GetUrlParameter(["name", "cm"]));
   return (
     <>
       <div
