@@ -23,7 +23,7 @@ const RoutesRender: FC<{ routes: RouteType[] }> = ({ routes }) => {
 
   const renderRoutes = (routes: RouteType[]): JSX.Element[] => {
     return routes.map((route: RouteType) => {
-      const { path, element, meta, children, index } = route;
+      const { path, element, meta, children } = route;
 
       // 当前访问路由
       if (pathname.includes(path)) {

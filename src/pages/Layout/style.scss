@@ -1,0 +1,67 @@
+.generate-layout {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f2f5;
+  .ant-layout-sider {
+    background-color: #0091d3;
+    .ant-menu {
+      background-color: transparent !important;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .ant-menu-submenu-title {
+      color: #fff !important;
+    }
+    .ant-menu-item {
+      padding-left: 52px !important;
+    }
+    .ant-menu-item-selected {
+      color: #0091d3 !important;
+    }
+    .ant-menu-item-active {
+      color: #fff !important;
+    }
+  }
+}
+.layout-logo {
+  cursor: pointer;
+  background-color: #047bb1;
+  height: 64px;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 64px;
+  font-weight: bold;
+  // 图片和文字对齐
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    margin-right: 9px;
+  }
+}
+.layout-header {
+  text-align: center;
+  color: #fff;
+  height: 64;
+  line-height: "64px";
+  background-color: #fff;
+  box-shadow: 0 2px 0 0 #0000001a;
+}
+.layout-content {
+  margin: 24px 16px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 1px #0000001a;
+}
+.layout-footer {
+  text-align: center;
+  color: #ccc;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fff;
+  box-shadow: 2px 0 0 0 #0000001a;
+}

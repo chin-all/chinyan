@@ -1,24 +1,16 @@
 /**
  * @description 组件的使用案例
  */
-import { Empty, PreviousPage } from "../../components";
+import { CaseComponent } from "@/components";
 function ComponentUse() {
+  const codeExample = `
+  // 一个暂时代码的组件
+  // 可以用于展示示例代码
+  console.log('didi')
+  `;
   return (
     <>
-      <PreviousPage />
-      <div
-        style={{
-          width: "100%",
-          height: "100px",
-          background: "#000",
-          color: "#fff",
-        }}
-      >
-        组件页面
-      </div>
-      <h3>空组件</h3>
-      <hr />
-      <Empty />
+      <CaseComponent code={codeExample} width="600px" />
     </>
   );
 }

@@ -3,7 +3,7 @@
  */
 import React, { FC, ReactElement, useEffect, useRef, useState } from "react";
 import html2canvas from "html2canvas";
-import "./index.scss";
+import "./style.scss";
 interface IProps {
   show?: boolean; // 组件的显隐
   setHidden?: any; // 设置隐藏的方法

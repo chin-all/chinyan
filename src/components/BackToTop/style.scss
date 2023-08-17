@@ -1,0 +1,24 @@
+.chinyan-top-jumper {
+  position: fixed;
+  right: 4%;
+  bottom: 5%;
+  width: 42px;
+  height: 42px;
+  background-color: rgba(200, 200, 200, 0.4);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.chinyan-top-jumper:before {
+  content: "▲";
+  display: block;
+  text-align: center;
+  color: #aaa;
+  line-height: 42px;
+  font-size: 18px;
+}
+.chinyan-top-jumper:hover:before {
+  content: "回到顶部";
+  line-height: 18px;
+  padding: 2px;
+  font-size: 14px;
+}

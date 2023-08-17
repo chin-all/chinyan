@@ -2,12 +2,10 @@
  * @description 工具的使用案例
  */
 import { getColorCombination } from "../../utils";
-import { PreviousPage } from "../../components";
 function PageTools() {
   const { backgroundColor, fontColor } = getColorCombination();
   return (
     <>
-      <PreviousPage />
       <div
         style={{
           width: "100%",
